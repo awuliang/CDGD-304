@@ -1,0 +1,261 @@
+<html>
+    <head><title>  Boston Rooms For Rent &amp; Shares</title></head>
+    <h1>Welcome to Craigslist</h1>
+    <style>
+        body{
+            font-family:Arial, verdana, sans-serif;
+            color: #665544;
+            padding: 50px;
+            padding-top: 0px;
+            background-color: floralwhite}
+
+        h3 {color: #ff7f7f}
+
+        .page{ border: 1px solid #665544;
+            background-color:cornsilk;
+            padding: inherit}
+
+        .verticalLine {
+            border-left: thick solid;
+            border-color: #ffd3d3;
+            border-radius: 100px;
+        }
+        body2{
+            font-weight: bold;
+            text-align: center;
+            font-size: 16px;
+            padding: 60px 0px 10px 0px;
+        }
+    </style>
+    <div class="verticalLine"></div>
+    <body>
+        <a class="header-logo" href="https://boston.craigslist.org/">Home</a>
+        <nav class="breadcrumbs-container">
+            <form id="breadcrumbform" class="breadcrumbs-form" method="get" action="https://boston.craigslist.org/search/roo" data-action="/search/###/roo">
+                <h3>Choose Area</h3>
+                <select id="areaAbb" class="js-only">
+                    <option value="boston">boston</option>
+                    <option value="albany">albany, NY</option>
+                    <option value="capecod">cape cod</option>
+                    <option value="catskills">catskills</option>
+                    <option value="cnj">central NJ</option>
+                    <option value="newlondon">eastern CT</option>
+                    <option value="glensfalls">glens falls</option>
+                    <option value="hartford">hartford</option>
+                    <option value="hudsonvalley">hudson valley</option>
+                    <option value="jerseyshore">jersey shore</option>
+                    <option value="longisland">long island</option>
+                    <option value="maine">maine</option>
+                    <option value="nh">new hampshire</option>
+                    <option value="newhaven">new haven</option>
+                    <option value="newyork">new york</option>
+                    <option value="newjersey">north jersey</option>
+                    <option value="nwct">northwest CT</option>
+                    <option value="oneonta">oneonta</option>
+                    <option value="plattsburgh">plattsburgh</option>
+                    <option value="poconos">poconos</option>
+                    <option value="providence">rhode island</option>
+                    <option value="sherbrooke">sherbrooke</option>
+                    <option value="southcoast">south coast</option>
+                    <option value="utica">utica</option>
+                    <option value="vermont">vermont</option>
+                    <option value="westernmass">western mass</option>
+                    <option value="worcester">worcester</option>
+                </select><br>
+                <span class="breadcrumb-arrow"></span>
+                <select id="subArea">
+                    <option value="" selected="">all boston</option>
+                    <option value="gbs">boston/camb/brook</option>
+                    <option value="bmw">metro west</option>
+                    <option value="nos">north shore</option>
+                    <option value="nwb">northwest/merrimack</option>
+                    <option value="sob">south shore</option>
+                </select><br>
+                <span class="breadcrumb-arrow"></span>
+                <select id="catAbb">
+                    <option value="ccc">community</option>
+                    <option value="eee">events</option>
+                    <option value="sss">for sale</option>
+                    <option value="ggg">gigs</option>
+                    <option value="hhh" selected="">housing</option>
+                    <option value="jjj">jobs</option>
+                    <option value="ppp">personals</option>
+                    <option value="rrr">resumes</option>
+                    <option value="bbb">services</option>
+                </select><br>
+                <span class="breadcrumb-arrow"></span>
+                <select id="subcatAbb" class="js-only">
+                    <option value="hhh">all</option>
+                    <option value="fee">apts broker fee</option>
+                    <option value="nfb">apts broker no fee</option>
+                    <option value="abo">apts by owner</option>
+                    <option value="aiv">apts registration fee</option>
+                    <option value="hou">apts wanted</option>
+                    <option value="swp">housing swap</option>
+                    <option value="off">office &amp; commercial</option>
+                    <option value="prk">parking &amp; storage</option>
+                    <option value="reb">real estate - by broker</option>
+                    <option value="reo">real estate - by owner</option>
+                    <option value="rew">real estate wanted</option>
+                    <option value="roo" selected="">rooms &amp; shares</option>
+                    <option value="sha">rooms wanted</option>
+                    <option value="sbw">sublet/temp wanted</option>
+                    <option value="sub">sublets &amp; temporary</option>
+                    <option value="vac">vacation rentals</option>
+                </select><span class="no-js"></span>
+                <span class="breadcrumb-arrow"></span>
+            </form>
+        </nav>
+        <div class="search-options-container">
+            <h3 class="search-options-header linklike">
+                <div class="icon icon-toggle-gear" aria-hidden="true"></div>
+                Select Options
+            </h3>
+            <input id="excats" type="hidden" name="excats">
+            <div class="search-options">
+                <div class="searchgroup categories">
+                </div>
+                <input type="hidden" name="userid" value="">
+                <div class="searchgroup">
+                    <label class="srchType"><input type="checkbox" name="srchType" class="autosubmit" value="T">search titles only</label> <br>
+                    <label class="hasPic"><input type="checkbox" name="hasPic" class="autosubmit" value="1">has image</label> <br>
+                    <label class="postedToday"><input type="checkbox" name="postedToday" class="autosubmit" value="1">posted today</label> <br>
+                    <label class="bundleDuplicates"><input type="checkbox" name="bundleDuplicates" class="autosubmit" value="1">bundle duplicates</label> <br>
+                    <label class="searchNearby"><input type="checkbox" name="searchNearby" class="" value="1">include nearby areas</label> <br>
+
+                </div> <br>
+
+                <div class="searchgroup">
+                    <span class="searchfieldlabel">miles from zip</span>
+                    <input type="number" max="200" min="0" size="3" inputmode="numeric" class="flatinput searchInput search_distance" placeholder="miles" name="search_distance" value="">
+                    <input type="text" class="flatinput searchInput postal" placeholder="from zip" size="7" name="postal" value="">
+                </div>
+
+                <div class="searchgroup minmax ">
+                    <span class="searchfieldlabel">price</span>
+                    <input type="tel" name="min_price" class="flatinput min" placeholder="min" title="whole number, no letters or symbols" value="">
+                    <input type="tel" name="max_price" class="flatinput max" placeholder="max" title="whole number, no letters or symbols" value="">
+                </div>
+
+                <div class="searchgroup minmax ">
+                    <span class="searchfieldlabel">ft<sup>2</sup></span>
+                    <input type="tel" name="minSqft" class="flatinput min" placeholder="min" title="whole number, no letters or symbols" value="">
+                    <input type="tel" name="maxSqft" class="flatinput max" placeholder="max" title="whole number, no letters or symbols" value="">
+                </div> <br>
+
+                <div class="searchgroup">
+                    <span class="searchfieldlabel">Date of availability</span>
+                    <select class="autosubmit" name="availabilityMode">
+                        <option value="0">all dates</option>
+                        <option value="1">within 30 days</option>
+                        <option value="2">beyond 30 days</option>
+                    </select>
+                </div>
+
+                <h3 class="search-options-header linklike">
+                    <div class="icon icon-toggle-gear" aria-hidden="true"></div>
+                    More Options
+                </h3>
+
+                <div class="searchgroup"><label class="private_room">
+                    <input type="checkbox" name="private_room" value="1" class="autosubmit">
+                    private room
+                    </label><br>
+                    <label class="private_bath">
+                        <input type="checkbox" name="private_bath" value="1" class="autosubmit">
+                        private bath
+                    </label><br>
+                    <label class="pets_cat">
+                        <input type="checkbox" name="pets_cat" value="1" class="autosubmit">
+                        allows cats 
+                    </label><br>
+                    <label class="pets_dog">
+                        <input type="checkbox" name="pets_dog" value="1" class="autosubmit">
+                        allows dogs
+                    </label><br>
+                    <label class="is_furnished">
+                        <input type="checkbox" name="is_furnished" value="1" class="autosubmit">
+                        furnished
+                    </label><br>
+                    <label class="no_smoking">
+                        <input type="checkbox" name="no_smoking" value="1" class="autosubmit">
+                        no smoking
+                    </label><br>
+                    <label class="wheelchaccess">
+                        <input type="checkbox" name="wheelchaccess" value="1" class="autosubmit">
+                        wheelchair access
+                    </label><br>
+                    <label class="Laundry">
+                        <input type="checkbox" name="laundry" value="1" class="autosubmit">
+                        laundry
+                    </label><br>
+                    <label class="parking">
+                        <input type="checkbox" name="parking" value="1" class="autosubmit">
+                        parking
+                    </label><br>
+                    <br>
+                </div>
+                <div class="searchgroup resetsearch">
+                    <a href="file:///Users/Alicia/Desktop/Web%20Design/05%20craigslist.html" title="clear all search parameters" class="reset linklike">reset</a>
+                    <button type="submit" class="searchlink linklike">Search</button>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <body2>
+        <h3>Most Recently</h3>
+        <li class="result-row" data-pid="6004807341" data-repost-of="4904959791">
+
+            <a href="https://boston.craigslist.org/gbs/roo/6004807341.html" class="result-image gallery" data-ids="1:00w0w_2FrfnIGEgMq,0:00W0W_fmKe5771OJD,0:00G0G_hIz7yTKjMCM,1:00z0z_7lzcTaDKV4V,1:00Z0Z_2KyUbC1xptp,1:00H0H_i18dMT19Bap">
+                <span class="result-price">$1000</span>
+            </a>
+            <p class="result-info">
+                <time class="result-date" datetime="2017-02-15 13:18" title="Wed 15 Feb 01:18:42 PM">Feb 15</time>
+
+                <a href="https://boston.craigslist.org/gbs/roo/6004807341.html" data-id="6004807341" class="result-title hdrlnk">Month to month / Room furnished / Everything included</a>
+
+                <span class="result-meta">
+                    <span class="result-hood"> (BRIGHTON)</span>
+
+                </span>
+            </p>
+        </li>
+
+        <li class="result-row" data-pid="6004766471">
+
+            <a href="https://boston.craigslist.org/sob/roo/6004766471.html" class="result-image gallery" data-ids="1:00l0l_eh3s3KjgrtL,1:00e0e_c94dipAeDNf,1:00v0v_b4hDeRn1XNK,1:00I0I_aYhb1nU4w7X,1:00E0E_6eBqIiqBk9y,1:01616_fkkNdiEhOma,1:00U0U_i6thedqLxVd,1:00s0s_ke7xizvc9Gg">
+                <span class="result-price">$1200</span>
+            </a>
+            <p class="result-info">
+                <time class="result-date" datetime="2017-02-15 13:16" title="Wed 15 Feb 01:16:54 PM">Feb 15</time>
+                <a href="https://boston.craigslist.org/sob/roo/6004766471.html" data-id="6004766471" class="result-title hdrlnk">Big bedroom for rent / Big house / Dorchester MA</a>
+                <span class="result-meta">
+                    <span class="result-hood"> (BOSTON)</span>
+                    <span class="unbanish icon icon-trash red" role="button" aria-hidden="true"></span>
+                    <a href="https://boston.craigslist.org/search/roo#" class="restore-link">
+                    </a>
+                </span>
+            </p>
+        </li>
+
+
+        <li class="result-row" data-pid="6001890225" data-repost-of="4401380626">
+
+            <a href="https://boston.craigslist.org/gbs/roo/6001890225.html" class="result-image gallery" data-ids="1:00s0s_9p0QeuSfoy9,1:00z0z_cs2iHExvkra,1:00P0P_jzJtZRJyR2a,1:00O0O_2mjZlExqW38,1:00q0q_53zt39zep5o,1:00f0f_dIOCqKdBq54,1:00q0q_684NiAHIp6A,1:00W0W_iorY0hiHSuG,1:00f0f_hQgCTmkGH9K">
+                <span class="result-price">$1395</span>
+            </a>
+
+            <p class="result-info">
+                <time class="result-date" datetime="2017-02-15 13:14" title="Wed 15 Feb 01:14:10 PM">Feb 15</time>
+
+                <a href="https://boston.craigslist.org/gbs/roo/6001890225.html" data-id="6001890225" class="result-title hdrlnk">Nice Quiet / Furnished / Double Room</a>
+
+
+                <span class="result-meta">
+                    <span class="result-hood"> (HARVARD / MIT)</span>
+                </span>
+            </p>
+        </li>
+    </body2>
+</html>
